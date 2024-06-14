@@ -1,6 +1,6 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -33,23 +33,19 @@ import Card from "../components/Card.astro";
 				</linearGradient>
 			</defs>
 		</svg>
-		<a href="/">首页</a>
+        <a href="/">首页</a>
 		<a href="/books/">电子书</a>
         <a href="/notes/">学习笔记</a>
 		<a href="/about/">关于</a>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<h2>P211012533 <span class="text-gradient">孙诗琪</span></h2>
+		<h1 class="text-gradient">电子书资源</h1>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br
-			/>
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
-			above.
+            本页面收集传播学考研复习资料、电子书资源。
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				href="https://book.douban.com/subject/36168642/"
+				title="传播学"
+				body="本书根据威廉·弗卢塞尔生前的手稿整理而成，以传播理论的系统化为目标，试图完善人类传播理论的未尽之处，从历史、哲学和符号的视角探究了人类传播活动的意图、结构和运作方式"
 			/>
 			<Card
 				href="https://astro.build/integrations/"
@@ -106,10 +102,7 @@ import Card from "../components/Card.astro";
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(
-			rgba(var(--accent-dark), 66%),
-			rgba(var(--accent-dark), 33%)
-		);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
 		padding: 1.5rem;
 		border-radius: 8px;
 	}
